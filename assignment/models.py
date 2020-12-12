@@ -1,4 +1,4 @@
-from database import *
+from assignment.database import *
 
 
 class User(db.Model): 

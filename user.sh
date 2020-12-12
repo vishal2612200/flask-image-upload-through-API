@@ -5,7 +5,7 @@ echo
 
 curl -i -H "Content-Type: application/json"\
     -X POST -d "{\"username\":\"newuser\", \"password\":\"123\"}"\
-     http://localhost:5000/register
+     https://flaskimageupload.herokuapp.com/register
 
 echo
 echo "---Login with Credits---"
@@ -14,5 +14,5 @@ echo
 
 curl -i -H "Content-Type: application/json"\
      -X POST -d "{\"username\":\"newuser\", \"password\":\"123\"}"\
-      http://localhost:5000/login
+      https://flaskimageupload.herokuapp.com/login
 

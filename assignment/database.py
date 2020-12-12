@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy 
 
-from addjwt import *
+from assignment.addjwt import *
 
 
 #This should be changes during production

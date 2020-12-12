@@ -6,3 +6,7 @@ Flask-SQLAlchemy
 flask-jwt-extended
 # https://github.com/alisaifee/flask-limiter
 Flask-Limiter
+# https://github.com/benoitc/gunicorn
+gunicorn
+# https://github.com/pallets/werkzeug
+Werkzeug

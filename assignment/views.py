@@ -1,5 +1,5 @@
 from flask import request, jsonify, make_response, send_from_directory, render_template
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 from flask_sqlalchemy import SQLAlchemy 
 from uuid import uuid4# for public id 
 from werkzeug.security import generate_password_hash, check_password_hash 
@@ -9,8 +9,8 @@ from os import path, makedirs, listdir
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 
-from database import *
-from models import *
+from assignment.database import *
+from assignment.models import *
 
 
 file_handler = FileHandler('server.log')
@@ -192,3 +192,4 @@ def image_page():
 def webcam_page():
 	return render_template('layout/default.html',
                             content=render_template( 'pages/webcam.html'))
+

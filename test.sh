@@ -4,7 +4,7 @@ echo "------ Get list of users ------"
 echo
 
 curl -X GET \
-  'http://localhost:5000/user' \
+  'https://flaskimageupload.herokuapp.com/user' \
   -H "Authorization: Bearer $jwt" \
 
 
@@ -14,12 +14,12 @@ echo
 echo
 
 curl -H "Authorization: Bearer $jwt"\
-     --output -X POST http://localhost:5000/upload -F image=@1.png 
+     --output -X POST https://flaskimageupload.herokuapp.com/upload -F image=@1.png 
 
 echo
 echo "---Get all uploaded files names---"
 echo
 echo
 
-curl -i -H "Authorization: Bearer $jwt" --output -X GET http://localhost:5000/files
+curl -i -H "Authorization: Bearer $jwt" --output -X GET https://flaskimageupload.herokuapp.com/files
 
